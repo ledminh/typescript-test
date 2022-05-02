@@ -1,0 +1,42 @@
+{
+  "name": "my-own",
+  "version": "1.0.0",
+  "description": "My own experiment on Webpack",
+  "main": "src",
+  "scripts": {
+    "webpack-dev-server": "webpack-dev-server",
+    "webpack": "webpack",
+    "debug": "node --inspect --inspect-brk ./node_modules/webpack/bin/webpack.js",
+    "dev": "npm run webpack-dev-server -- --env mode=development  --hot",
+    "dev:debug": "npm run debug",
+    "dev:web": "npm run dev -- --env presets=web",
+    
+    "debugthis": "node --inspect --inspect-brk ./src/index.js",
+    
+    "prod": "npm run webpack  -- --env mode=production",
+    "prod:debug": "npm run debug",
+    "prod:web": "npm run prod -- --env presets=web",
+    "prod:typescript": "npm run prod --env presets=typescript",
+    "prod:analyze": "npm run prod --env presets=analyze",
+    "prod:compress": "npm run prod --env presets=compress"
+  },
+  "author": "Minh Le",
+  "license": "ISC",
+  "devDependencies": {
+    "compression-webpack-plugin": "^9.2.0",
+    "css-loader": "^6.7.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.72.0",
+    "webpack-bundle-analyzer": "^4.5.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.8.1",
+    "mini-css-extract-plugin": "^2.6.0",
+    "webpack-merge": "^5.8.0"
+  },
+  "dependencies": {
+    
+  }
+}
