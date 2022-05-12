@@ -1,19 +1,11 @@
-# webpack-project-boilerplate
+# jsTypingGame
 
-A very simple boilerplate for any project that uses webpack.
+A simple game to practice typing on computer keyboard.
 
-## Usage
+## TECHS USED
 
-#### Installation
+Vanila JS, Webpack, lodash library.
 
-```bash
-git clone https://github.com/ledminh/webpack-project-boilerplate
-npm install
-```
+## DEMO
 
-#### Commands
-
-* `npm run dev`  ----  run in development mode in general
-* `npm run dev:web`  --- run in development mode for front-end
-* `npm run prod` --- run in production mode in general
-* `npm run prod:web` --- run in production mode for front-end
+https://ledminh.github.io/typing-fast/
